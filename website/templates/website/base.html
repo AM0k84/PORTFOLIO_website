@@ -10,10 +10,14 @@
 
     {% block css %}{% endblock %}
 
-    <title>Title {% block title %}{% endblock %}</title>
+    <title>{% block title %}{% endblock %}</title>
 </head>
 <body>
+    {% include 'website/navbar.html' %}
+
     {% block body %}{% endblock %}
+
+    {% include 'website/footer.html' %}
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
