@@ -1,7 +1,46 @@
-h1 {
-    color:greenyellow;
+.navbar {
+    height: auto !important;
+    padding: .5rem 1rem !important;
+    border-bottom: 1px solid rgba(0, 0, 0, .1)
 }
 
-h3 {
-    color: rebeccapurple;
+.navbar-dark .search {
+    background: transparent !important;
+    border: 1px solid #dee2e6 !important;
+    color: #f9f8fa !important;
+}
+
+.navbar-brand {
+    font-family: PT Serif, serif;
+    text-transform: lowercase;
+    font-weight: 700
+}
+
+nav {
+    z-index: 10
+}
+
+@media (min-width: 768px) {
+    .form-control-rounded {
+        border-radius: 1rem !important
+    }
+
+    .navbar .search {
+        width: 114px !important
+    }
+
+    .navbar .search:focus {
+        width: 220px !important;
+        content: "Type here"
+    }
+
+    .navbar-brand {
+        font-size: 2rem !important
+    }
+}
+
+@media (min-width: 960px) {
+    .navbar-brand {
+        font-size: 2.5rem !important
+    }
 }
