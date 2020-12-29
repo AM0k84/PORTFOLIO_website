@@ -1,7 +1,43 @@
-h1 {
-    color:greenyellow;
+body {
+  min-height: 0px;
 }
 
-h3 {
-    color: rebeccapurple;
+/*NAVBAR CSS*/
+
+.navbar {
+    height: auto !important;
+    padding: .5rem 1rem !important;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+
 }
+
+.navbar-brand {
+    font-family: PT Serif, serif;
+    text-transform: lowercase;
+    font-weight: 700;
+    color: black;
+}
+
+.brand a {
+    color: black;
+}
+
+nav {
+    z-index: 10
+}
+
+@media (min-width: 768px) {
+    .navbar-brand {
+        font-size: 2rem !important
+    }
+}
+
+@media (min-width: 960px) {
+    .navbar-brand {
+        font-size: 2.5rem !important
+    }
+}
+
+/*END NAVBAR*/
+
+
