@@ -35,6 +35,9 @@ class Project(models.Model):
             self.slug = slugify(self.title)
         return super().save(*args, **kwargs)
 
+    def project_categories(self):
+        return ", \n".join([x.tool_name for x in self.category.all()])
+
     def __str__(self):
         return self.title
 

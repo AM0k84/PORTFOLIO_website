@@ -4,7 +4,7 @@ from projects.models import Project, ProjectCategory
 
 
 class ProjectAdmin(admin.ModelAdmin):
-    list_display = ['id', 'title', 'snippet']
+    list_display = ['id', 'title', 'snippet', 'project_categories']
     prepopulated_fields = {'slug': ('title',)}
 
 
