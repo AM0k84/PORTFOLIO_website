@@ -50,7 +50,8 @@ h1.heading {
   }
 }
 .card {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+  "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   display: block;
     margin-bottom: 20px;
     line-height: 1.42857143;
@@ -81,13 +82,16 @@ h1.heading {
   text-align:left;
 }
 .card-title {
+
   margin-top:0px;
-  font-weight: 700;
   font-size: 1.65em;
+
 }
 .card-title a {
-  color: #000;
+
   text-decoration: none !important;
+  color: pink;
+
 }
 .card-read-more {
   border-top: 1px solid #D4D4D4;
@@ -96,7 +100,6 @@ h1.heading {
 .card-read-more a {
   text-decoration: none !important;
   padding:10px;
-  font-weight:600;
   text-transform: uppercase;
   color: pink;
 
