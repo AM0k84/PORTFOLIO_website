@@ -44,11 +44,13 @@ body {
 }
 
 .card-category img{
-    width: 9%;
-    height: 9%;
+    width: 11%;
+    height: 11%;
     display: inline-block;
+}
 
-
+.card-category a{
+    text-decoration: none;
 }
 
 .card-content {

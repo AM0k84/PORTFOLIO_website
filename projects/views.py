@@ -11,4 +11,8 @@ class ProjectsListView(ListView):
     model = Project
 
     def get_queryset(self):
-        return self.model.objects.all()
+        return self.model.objects.all().order_by('-pk')
+
+
+class CategoryProjectListView(ListView):
+    pass

@@ -23,29 +23,20 @@
                                 <img src="{{ project.image.url }}"/>
                             </a>
                             <div class="card-content">
-
-
-
                                 <div class="card-title">
                                     <a href="#">
                                         {{ project.title }}
                                     </a>
-
-
-
                                 </div>
                                 <p class="snippet">
                                     {{ project.snippet }}
                                 </p>
                             </div>
-
-                                 <div class="card-category">
-
-                                    {% for category in project.category.iterator %}
-                                        <img src="{{ category.tool_image.url }}"/>
-                                    {% endfor %}
-                                </div>
-
+                            <div class="card-category">
+                                {% for category in project.category.iterator %}
+                                    <a href="#"> <img src="{{ category.tool_image.url }}"/> </a>
+                                {% endfor %}
+                            </div>
                             <div class="card-read-more">
                                 <a href="#">
                                     szczegóły
