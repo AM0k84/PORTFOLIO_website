@@ -1,0 +1,75 @@
+html,
+body {
+    background: #FFF;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.card {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
+    "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    display: block;
+    margin-bottom: 20px;
+    line-height: 1.42857143;
+    background-color: #fff;
+    border-radius: 2px;
+}
+
+.img-card {
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    display: block;
+    overflow: hidden;
+}
+
+.img-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: all .25s ease;
+}
+
+.card-content {
+    padding: 15px;
+    text-align: left;
+}
+
+.card-title {
+    margin-top: 0px;
+    color: #727272E8;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.snippet {
+    color: #727272E8;
+}
+
+.card-title a {
+    text-decoration: none !important;
+    color: #727272E8;
+}
+
+.card-title a:hover {
+    color: #484848;
+    text-decoration: none;
+}
+
+.card-read-more {
+    border-top: 1px solid #D4D4D4;
+    text-align: center;
+    padding: 10px;
+}
+
+.card-read-more a {
+    text-decoration: none !important;
+    padding: 10px;
+    text-transform: uppercase;
+    color: #727272E8;
+}
+
+.card-read-more a:hover {
+    color: #484848;
+    text-decoration: none;
+}

@@ -1,0 +1,51 @@
+{% extends "website/base.html" %}
+{% load static %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/projects/style.css' %}"> {% endblock %}
+{% block title %}ALL PROJECTS{% endblock %}
+
+
+{% block body %}
+    <div class="content">
+        <div class="container">
+            <div class="row">
+
+                {% if object_list %}
+                    {% for project in object_list %}
+
+
+                        <div class="col12 col-sm-4">
+                            <div class="card">
+                                <a class="img-card"
+                                   href="http://www.fostrap.com/2016/03/bootstrap-3-carousel-fade-effect.html">
+                                    <img src="{{ project.image.url }}"/>
+                                </a>
+                                <div class="card-content">
+                                    <div class="card-title">
+                                        <a href="http://www.fostrap.com/2016/03/bootstrap-3-carousel-fade-effect.html">
+                                            {{ project.title }}
+                                        </a>
+                                    </div>
+                                    <p class="snippet">
+                                        {{ project.snippet }}
+                                    </p>
+                                </div>
+                                <div class="card-read-more">
+                                    <a href="http://www.fostrap.com/2016/03/bootstrap-3-carousel-fade-effect.html">
+                                        Czytaj więcej
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+
+
+                    {% endfor %}
+                {% endif %}
+
+            </div>
+        </div>
+    </div>
+{% endblock %}

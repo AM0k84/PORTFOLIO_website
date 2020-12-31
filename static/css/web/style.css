@@ -3,12 +3,10 @@ body {
 }
 
 /*NAVBAR CSS*/
-
 .navbar {
     height: auto !important;
     padding: .5rem 1rem !important;
     border-bottom: 1px solid rgba(0, 0, 0, .1);
-
 }
 
 .navbar-brand {
@@ -26,7 +24,6 @@ nav {
     z-index: 10
 }
 
-
 @media (min-width: 768px) {
     .navbar-brand {
         font-size: 2rem !important
@@ -43,24 +40,19 @@ nav {
 
 
 /*FOOTER*/
-
 .site-footer {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     background-color: white;
-    /*padding: 45px 0 20px;*/
     font-size: 15px;
     color: #727272E8;
     border-top: 1px solid rgba(0, 0, 0, .1);
-
-
 }
-
 
 .footer-topic {
     color: #727272E8;
     font-size: 16px;
     text-transform: uppercase;
-    margin-top: 5px;
+    margin-top: 30px;
 }
 
 .site-footer a {
@@ -93,17 +85,10 @@ nav {
 .footer-links.inline li {
     display: inline-block
 }
+
 .footer-menu {
     text-align: center;
-
 }
-
-.copyright-text {
-    margin: 0;
-    text-align: left;
-}
-
-
 
 /*END FOOTER*/
 
