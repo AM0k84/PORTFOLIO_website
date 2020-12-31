@@ -2,12 +2,11 @@
 {% load static %}
 {% block css %}
     <link rel="stylesheet" href="{% static 'css/projects/style.css' %}"> {% endblock %}
-{% block title %}ALL PROJECTS{% endblock %}
-
+{% block title %}  KATEGORIA PROJEKTU: {{ view.projectcategory.tool_name }}  {% endblock %}
 
 {% block body %}
 
-    <div class="page_title"> WSZYSTKIE PROJEKTY</div>
+    <div class="page_title"> KATEGORIA PROJEKTU: {{ view.projectcategory.tool_name|upper }}</div>
 
     {% include 'projects/project_list_base.html' %}
 
