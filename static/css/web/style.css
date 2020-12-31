@@ -1,5 +1,5 @@
 body {
-    min-height: 0px;
+    min-height: 0;
 }
 
 /*NAVBAR CSS*/
@@ -7,6 +7,7 @@ body {
     height: auto !important;
     padding: .5rem 1rem !important;
     border-bottom: 1px solid rgba(0, 0, 0, .1);
+    margin-bottom: 20px;
 }
 
 .navbar-brand {
@@ -35,7 +36,6 @@ nav {
         font-size: 2.5rem !important
     }
 }
-
 /*END NAVBAR*/
 
 
@@ -53,6 +53,7 @@ nav {
     font-size: 16px;
     text-transform: uppercase;
     margin-top: 30px;
+    margin-bottom: 5px;
 }
 
 .site-footer a {
@@ -88,6 +89,10 @@ nav {
 
 .footer-menu {
     text-align: center;
+}
+
+.copyright {
+    margin-bottom: 15px;
 }
 
 /*END FOOTER*/
