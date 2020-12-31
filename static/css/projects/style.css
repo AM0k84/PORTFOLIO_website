@@ -1,15 +1,8 @@
 html,
 body {
-    /*-moz-box-sizing: border-box;*/
-    /*box-sizing: border-box;*/
-    /*height: 100%;*/
-    /*width: 100%;*/
     background: #FFF;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    /*font-weight: 400;*/
 }
-
-
 
 .card {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial,
@@ -20,7 +13,6 @@ body {
     background-color: #fff;
     border-radius: 2px;
 }
-
 
 .img-card {
     width: 100%;
