@@ -6,41 +6,58 @@
 
 
 {% block body %}
-    <div class="content">
-        <div class="container">
-            <div class="row">
 
-                {% if object_list %}
-                    {% for project in object_list %}
+    <div class="page_title"> WSZYSTKIE PROJEKTY</div>
 
-                        <div class="col12 col-sm-4">
-                            <div class="card">
-                                <a class="img-card"
-                                   href="http://www.fostrap.com/2016/03/bootstrap-3-carousel-fade-effect.html">
-                                    <img src="{{ project.image.url }}"/>
-                                </a>
-                                <div class="card-content">
-                                    <div class="card-title">
-                                        <a href="http://www.fostrap.com/2016/03/bootstrap-3-carousel-fade-effect.html">
-                                            {{ project.title }}
-                                        </a>
-                                    </div>
-                                    <p class="snippet">
-                                        {{ project.snippet }}
-                                    </p>
-                                </div>
-                                <div class="card-read-more">
-                                    <a href="http://www.fostrap.com/2016/03/bootstrap-3-carousel-fade-effect.html">
-                                        Czytaj więcej
+    <div class="container">
+
+        <div class="row">
+
+            {% if object_list %}
+                {% for project in object_list %}
+
+                    <div class="col12 col-sm-4">
+                        <div class="card">
+                            <a class="img-card"
+                               href="#">
+                                <img src="{{ project.image.url }}"/>
+                            </a>
+                            <div class="card-content">
+
+
+
+                                <div class="card-title">
+                                    <a href="#">
+                                        {{ project.title }}
                                     </a>
+
+
+
                                 </div>
+                                <p class="snippet">
+                                    {{ project.snippet }}
+                                </p>
+                            </div>
+
+                                 <div class="card-category">
+
+                                    {% for category in project.category.iterator %}
+                                        <img src="{{ category.tool_image.url }}"/>
+                                    {% endfor %}
+                                </div>
+
+                            <div class="card-read-more">
+                                <a href="#">
+                                    szczegóły
+                                </a>
                             </div>
                         </div>
+                    </div>
 
-                    {% endfor %}
-                {% endif %}
+                {% endfor %}
+            {% endif %}
 
-            </div>
         </div>
     </div>
+
 {% endblock %}

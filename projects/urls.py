@@ -5,6 +5,6 @@ from .views import ProjectsListView
 app_name = 'projects'
 
 urlpatterns = [
-    path("all/", ProjectsListView.as_view(), name="all_projects"),
+    path("", ProjectsListView.as_view(), name="all_projects"),
 ]
 

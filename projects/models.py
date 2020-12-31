@@ -5,6 +5,7 @@ from tinymce.models import HTMLField
 
 class ProjectCategory(models.Model):
     tool_name = models.CharField(max_length=128)
+    tool_image = models.ImageField(blank=False, null=False, upload_to='tool_image/')
     slug = models.SlugField(null=False, unique=False)
 
     def save(self, *args, **kwargs):
