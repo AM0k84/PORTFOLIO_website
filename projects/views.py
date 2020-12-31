@@ -1,7 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.views.generic import ListView
 
-from projects.models import Project
+from projects.models import Project, ProjectCategory
 
 app_name = 'projects'
 
@@ -15,4 +15,12 @@ class ProjectsListView(ListView):
 
 
 class CategoryProjectListView(ListView):
-    pass
+    template_name = "projects/project_category.html"
+    queryset = Project.objects.order_by('-pk')
+
+    def get_queryset(self, *args, **kwargs):
+        return super().get_queryset(*args, **kwargs).filter(
+            category__slug=self.kwargs['slug'])
+
+    def projectcategory(self):
+        return get_object_or_404(ProjectCategory, slug=self.kwargs['slug'])

@@ -49,6 +49,11 @@ body {
     display: inline-block;
 }
 
+.card-category img:hover {
+    opacity: 0.5;
+}
+
+
 .card-category a{
     text-decoration: none;
 }
