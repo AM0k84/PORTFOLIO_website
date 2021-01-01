@@ -8,13 +8,17 @@
 
 {% block body %}
 
-    <div class="page_title"> SZCZEGOŁY PROJEKTU</div>
+    <div class="page_title"> SZCZEGÓŁY PROJEKTU</div>
 
     <div class="container">
         <div class="row">
             <div class="col-md-7">
-                {{ project.title }}
-                {{ project.body|safe }}
+                <div class="project-det-title">
+                    {{ project.title }}
+                </div>
+                <div class="project-det-body">
+                    {{ project.body|safe }}
+                </div>
             </div>
             <div class="col-md-5 col-sm-12 col-12">
                 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
@@ -41,15 +45,24 @@
                     </a>
                 </div>
             </div>
-            <div class="col-md-12">
-                {% for category in project.category.iterator %}
-                    <a href="{% url 'projects:category_projects_list' category.slug %}">
-                        <img src="{{ category.tool_image.url }}"/> </a>
-                {% endfor %}
+
+            <div class="project-tool col-md-6">
+                Wykorzystane technologie i narzędzia
+                <div class="project-category">
+                    {% for category in project.category.iterator %}
+                        <a href="{% url 'projects:category_projects_list' category.slug %}">
+                            <img src="{{ category.tool_image.url }}"/> </a>
+                    {% endfor %}
+                </div>
             </div>
 
-            <div class="col-md-12">
-                {{ project.github_repository }}
+
+            <div class="project-github col-md-6">
+                <div class="repo-title">
+                    Repozytorium
+                </div>
+                <i class="fab fa-github"></i> github: {{ project.github_repository }}
+
             </div>
         </div>
     </div>

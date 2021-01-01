@@ -4,7 +4,7 @@ body {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-.page_title{
+.page_title {
     text-align: center;
     font-size: 20px;
     width: 100%;
@@ -43,9 +43,9 @@ body {
     padding: 7px;
 }
 
-.card-category img{
-    width: 11%;
-    height: 11%;
+.card-category img {
+    width: 10%;
+    height: 10%;
     display: inline-block;
 }
 
@@ -57,7 +57,7 @@ body {
     opacity: 0.7;
 }
 
-.card-category a{
+.card-category a {
     text-decoration: none;
 }
 
@@ -66,7 +66,7 @@ body {
     text-align: left;
 }
 
-.card-category a{
+.card-category a {
     text-decoration: none;
 }
 
@@ -76,8 +76,6 @@ body {
     font-size: 20px;
     text-transform: uppercase;
 }
-
-
 
 .snippet {
     color: #727272E8;
@@ -109,4 +107,56 @@ body {
 .card-read-more a:hover {
     color: #484848;
     text-decoration: none;
+}
+
+
+.project-tool {
+    text-align: center;
+    color: #727272E8;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+.repo-title {
+    color: #727272E8;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+
+.project-github {
+    text-align: center;
+}
+
+
+
+.project-det-title {
+    margin-top: 0;
+    color: #727272E8;
+    font-size: 37px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.project-category {
+    /*padding: 15px;*/
+    text-align: center;
+
+}
+
+.project-category a {
+    text-decoration: none;
+    margin-left: 10px;
+    margin-right: 10px;
+
+}
+
+.project-category img {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+}
+
+.project-category img:hover {
+    opacity: 0.7;
+
 }
