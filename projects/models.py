@@ -1,5 +1,6 @@
 from django.db import models
 from django.template.defaultfilters import slugify
+from django.urls import reverse
 from tinymce.models import HTMLField
 
 
@@ -38,6 +39,9 @@ class Project(models.Model):
 
     def project_categories(self):
         return ", \n".join([x.tool_name for x in self.category.all()])
+
+    def get_absolute_url(self):
+        return reverse('projects:project_detail', kwargs={'pk': self.pk, 'slug': self.slug})
 
     def __str__(self):
         return self.title
