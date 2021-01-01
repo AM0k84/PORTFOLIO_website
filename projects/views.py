@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from django.views.generic import ListView
+from django.views.generic import ListView, DetailView
 
 from projects.models import Project, ProjectCategory
 
@@ -24,3 +24,8 @@ class CategoryProjectListView(ListView):
 
     def projectcategory(self):
         return get_object_or_404(ProjectCategory, slug=self.kwargs['slug'])
+
+
+class ProjectDetailView(DetailView):
+    template_name = "projects/project_detail.html"
+    model = Project
