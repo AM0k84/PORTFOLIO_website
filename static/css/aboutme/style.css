@@ -1,3 +1,5 @@
+
+
 .page_title {
     text-align: center;
     font-size: 20px;
@@ -6,11 +8,19 @@
     color: #727272E8;
 }
 
-.services-area{
+
+.education-body {
     color: #727272E8;
 }
 
+.services-area {
+    color: #727272E8;
+}
 
+.services-img img{
+    max-width: 50px;
+    max-height: 50px;
+}
 
 .services-area .services-title h1{
     font-size: 35px;
@@ -25,3 +35,4 @@
     transition: box-shadow .7s ease;
     color: #727272E8;
 }
+

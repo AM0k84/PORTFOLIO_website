@@ -1,10 +1,10 @@
 from django.urls import path
 
-from .views import SkillsListView
+from .views import AboutmeListView
 
 app_name = 'aboutme'
 
 urlpatterns = [
-    path("", SkillsListView.as_view(), name="aboutme"),
+    path("", AboutmeListView.as_view(), name="aboutme"),
 
 ]

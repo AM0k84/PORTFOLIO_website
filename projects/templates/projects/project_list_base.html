@@ -1,3 +1,9 @@
+<div class="col-lg-12 text-center projects-title">
+    <p class="para">
+        Tutaj będzie znajdował się krótki opis wszystkich moich projektów.
+    </p>
+</div>
+
 <div class="container">
     <div class="row">
         {% if object_list %}
@@ -5,12 +11,12 @@
                 <div class="col12 col-sm-4">
                     <div class="card">
                         <a class="img-card"
-                           href="{{ project.get_absolute_url}}">
+                           href="{{ project.get_absolute_url }}">
                             <img src="{{ project.image.url }}"/>
                         </a>
                         <div class="card-content">
                             <div class="card-title">
-                                <a href="{{ project.get_absolute_url}}">
+                                <a href="{{ project.get_absolute_url }}">
                                     {{ project.title }}
                                 </a>
                             </div>
@@ -25,7 +31,7 @@
                             {% endfor %}
                         </div>
                         <div class="card-read-more">
-                            <a href="{{ project.get_absolute_url}}">
+                            <a href="{{ project.get_absolute_url }}">
                                 szczegóły
                             </a>
                         </div>
