@@ -1,9 +1,50 @@
 {% extends "website/base.html" %}
 {% load static %}
-{% block css %} <link rel="stylesheet" href="{% static 'css/web/style.css' %}"> {% endblock %}
+{% block css %}
+    <link rel="stylesheet" href="{% static 'css/web/style.css' %}"> {% endblock %}
 {% block title %}HOME{% endblock %}
 
 
 {% block body %}
-    <h1>HOME</h1>
+    <main class="site-main">
+        <section class="site-banner">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 site-title">
+                        <h3 class="title-text">Cześć</h3>
+                        <h1 class="title-text">jestem Łukasz</h1>
+                        <h4 class="title-text text-uppercase">Junior Python Developer</h4>
+
+                        <div class="site-button">
+                            <div class="d-flex flex-row flex-wrap">
+                                <button type="button" class="btn btn-outline-secondary mr-4 text-uppercase">Zatrudnij mnie
+                                </button>
+                                <button type="button" class="btn btn-outline-secondary mr-4 text-uppercase"><i class="far fa-arrow-alt-circle-down"></i> Pobierz CV
+                                </button>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-12 banner-img">
+                        <img class="img-fluid"
+                             src="{% static 'images/lukasz-chalinski.jpg' %}" alt="Photo"><br>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+
 {% endblock %}

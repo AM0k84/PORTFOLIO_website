@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'website',
     'projects',
     'hobby',
+    'aboutme',
     'tinymce',
 ]
 
