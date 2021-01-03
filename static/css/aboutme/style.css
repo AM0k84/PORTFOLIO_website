@@ -1,0 +1,104 @@
+
+.page_title {
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+    padding: 30px;
+    color: #727272E8;
+}
+
+.page_title2 {
+    text-align: center;
+    font-size: 20px;
+    width: 100%;
+    padding: 30px;
+    color: #727272E8;
+    margin-top: 30px;
+}
+
+
+.card {
+    padding: 30px;
+    width: 70%;
+    /*margin-bottom: 40px;*/
+
+}
+
+.education-body {
+    color: #727272E8;
+}
+
+.services-area {
+    color: #727272E8;
+
+}
+
+.card-area {
+
+    color: #727272E8;
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 60px;
+}
+
+.services-img img {
+    max-width: 50px;
+    max-height: 50px;
+    opacity: 0.5;
+}
+
+.services-area .services-title h1 {
+    font-size: 35px;
+    color: #727272E8;
+}
+
+.services-area .services {
+    background-color: #FAFAFA;
+    /*padding: 2rem 0;*/
+    /*width: 16rem;*/
+    margin-top: 30px;
+    transition: box-shadow .7s ease;
+    color: #727272E8;
+}
+
+
+.edu-title {
+
+    color: #727272E8;
+    font-size: 20px;
+
+}
+
+.edu-body {
+    color: #727272E8;
+    margin-top: 13px;
+}
+
+.edu-date {
+    color: #727272E8;
+    font-size: 20px;
+    text-align: center;
+}
+
+.edu-image {
+    text-align: center;
+
+
+}
+
+.edu-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+
+}
+
+.edu-cert {
+    text-align: center;
+
+    margin-bottom: 30px;
+    margin-top: 15px;
+}
+
+
+
