@@ -5,3 +5,20 @@
     padding: 30px;
     color: #727272E8;
 }
+
+.video-content {
+    text-align: center;
+}
+
+.content-gallery {
+    text-align: center;
+}
+
+.content-gallery  img{
+    max-width: 100%;
+    height: auto;
+    width: 250px;
+
+
+
+}

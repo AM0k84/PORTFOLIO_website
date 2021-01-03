@@ -14,7 +14,9 @@ class MyHobby(models.Model):
     galery = models.OneToOneField(HobbyGallery, on_delete=models.CASCADE)
     name = models.CharField(max_length=80)
     body = HTMLField(max_length=1250)
-    youtube_video = EmbedVideoField(null=True, blank=True)
+    youtube_video1 = EmbedVideoField(null=True, blank=True)
+    youtube_video2 = EmbedVideoField(null=True, blank=True)
+    youtube_video3 = EmbedVideoField(null=True, blank=True)
     iframe = models.CharField(max_length=1000, null=True, blank=True)
 
 
