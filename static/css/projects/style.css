@@ -117,8 +117,6 @@ body {
     font-size: 17px;
     text-transform: uppercase;
     /*margin-bottom: 10px;*/
-
-
 }
 
 .repo-title {
@@ -127,8 +125,6 @@ body {
     text-transform: uppercase;
     margin-top: 30px;
     margin-bottom: 20px;
-
-
 }
 
 .tool-title {
@@ -155,21 +151,16 @@ body {
 .project-det-body {
     margin-top: 0;
     color: #727272E8;
-
-
 }
 
 .project-category {
-
     text-align: center;
-
 }
 
 .project-category a {
     text-decoration: none;
     margin-left: 10px;
     margin-right: 10px;
-
 }
 
 .project-category img {
@@ -181,7 +172,6 @@ body {
 
 .project-category img:hover {
     opacity: 0.9;
-
 }
 
 .git-link a {
