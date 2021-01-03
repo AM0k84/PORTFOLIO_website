@@ -1,30 +1,41 @@
 {% extends "website/base.html" %}
 {% load static %}
+
 {% block css %}
     <link rel="stylesheet" href="{% static 'css/hobby/style.css' %}"> {% endblock %}
+{% load embed_video_tags %}
 {% block title %}HOBBY{% endblock %}
 
 
 {% block body %}
 
     <div class="page_title"> HOBBY</div>
-
-{% for hobby in object_list %}
-    {{ hobby.name }}
-    {{ hobby.body|safe }}
-    <img src="{{ hobby.galery.image1.url }}">
-    <img src="{{ hobby.galery.image2.url }}">
-    <img src="{{ hobby.galery.image3.url }}">
-    <img src="{{ hobby.galery.image4.url }}">
-    <iframe src="{{ hobby.iframe|safe }}"></iframe>
-
-    {% endfor %}
+    <div class="container">
+        <div class="row">
 
 
+            {% for hobby in object_list %}
+                {{ hobby.name }}
+                {{ hobby.body|safe }}
+                <img src="{{ hobby.galery.image1.url }}">
+                <img src="{{ hobby.galery.image2.url }}">
+                <img src="{{ hobby.galery.image3.url }}">
+                <img src="{{ hobby.galery.image4.url }}">
+
+                {% if hobby.youtube_video %}
+                    {% video hobby.youtube_video 'medium' %} <br>
+                    URL: {{ my_video.url }}
+                    {#                    {{ hobby.youtube_video.thumbnail }}#}
+                    {#                    {{ hobby.youtube_video.backend }}#}
+
+                {% endif %}
+                {% if hobby.iframe %}
+                    <iframe src="{{ hobby.iframe|safe }}"></iframe>
+                {% endif %}
+
+            {% endfor %}
 
 
-
-
-
-
+        </div>
+    </div>
 {% endblock %}

@@ -1,5 +1,6 @@
 from django.db import models
 from tinymce.models import HTMLField
+from embed_video.fields import EmbedVideoField
 
 
 class HobbyGallery(models.Model):
@@ -13,6 +14,7 @@ class MyHobby(models.Model):
     galery = models.OneToOneField(HobbyGallery, on_delete=models.CASCADE)
     name = models.CharField(max_length=80)
     body = HTMLField(max_length=1250)
-    iframe = models.CharField(max_length=1000)
+    youtube_video = EmbedVideoField(null=True, blank=True)
+    iframe = models.CharField(max_length=1000, null=True, blank=True)
 
 
