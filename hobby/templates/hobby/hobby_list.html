@@ -9,6 +9,22 @@
 
     <div class="page_title"> HOBBY</div>
 
+{% for hobby in object_list %}
+    {{ hobby.name }}
+    {{ hobby.body|safe }}
+    <img src="{{ hobby.galery.image1.url }}">
+    <img src="{{ hobby.galery.image2.url }}">
+    <img src="{{ hobby.galery.image3.url }}">
+    <img src="{{ hobby.galery.image4.url }}">
+    <iframe src="{{ hobby.iframe|safe }}"></iframe>
+
+    {% endfor %}
+
+
+
+
+
+
 
 
 {% endblock %}

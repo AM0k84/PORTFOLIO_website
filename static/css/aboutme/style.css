@@ -16,12 +16,10 @@
     margin-top: 30px;
 }
 
-
 .card {
     padding: 30px;
     width: 70%;
     /*margin-bottom: 40px;*/
-
 }
 
 .education-body {
@@ -30,11 +28,9 @@
 
 .services-area {
     color: #727272E8;
-
 }
 
 .card-area {
-
     color: #727272E8;
     margin: 0 auto;
     float: none;
@@ -63,10 +59,8 @@
 
 
 .edu-title {
-
     color: #727272E8;
     font-size: 20px;
-
 }
 
 .edu-body {
@@ -82,20 +76,16 @@
 
 .edu-image {
     text-align: center;
-
-
 }
 
 .edu-image img {
     max-width: 100%;
     height: auto;
     border-radius: 50%;
-
 }
 
 .edu-cert {
     text-align: center;
-
     margin-bottom: 30px;
     margin-top: 15px;
 }
