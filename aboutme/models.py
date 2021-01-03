@@ -14,3 +14,6 @@ class Education(models.Model):
     certificate = models.ImageField(blank=False, null=False, upload_to='education_image/')
     school_name = models.CharField(max_length=80)
     body = models.TextField(max_length=1500)
+    date_from = models.PositiveSmallIntegerField()
+    date_to = models.PositiveSmallIntegerField()
+
