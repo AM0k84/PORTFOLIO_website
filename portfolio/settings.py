@@ -41,7 +41,9 @@ INSTALLED_APPS = [
     'projects',
     'hobby',
     'aboutme',
+    'contact',
     'tinymce',
+
 ]
 
 MIDDLEWARE = [

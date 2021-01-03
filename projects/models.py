@@ -30,6 +30,7 @@ class Project(models.Model):
     image = models.ImageField(blank=False, null=False, upload_to='project_image/')
     image2 = models.ImageField(blank=False, null=False, upload_to='project_image/')
     image3 = models.ImageField(blank=False, null=False, upload_to='project_image/')
+
     slug = models.SlugField(null=False, unique=False)
 
     def save(self, *args, **kwargs):
@@ -48,3 +49,5 @@ class Project(models.Model):
 
     class Meta:
         verbose_name_plural = 'Projects'
+
+
