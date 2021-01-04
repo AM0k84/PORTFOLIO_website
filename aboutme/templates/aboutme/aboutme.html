@@ -6,9 +6,7 @@
 
 
 {% block body %}
-
     <div class="page_title"> O MNIE</div>
-
     <div class=" card card-area">
         <div class="container">
             <div class="row">
@@ -25,24 +23,21 @@
         </div>
     </div>
 
-
-
     <section class="services-area">
         <div class="container">
             <div class="row">
 
-{#                <div class="col-lg-12 text-center services-title">#}
-{##}
-{#                    <p class="para">#}
-{#                        Tutaj będzie znajdował się krótki opis poniższych umiejętności, które zdobyłem od początku#}
-{#                        przygody z programowaniem.#}
-{#                    </p>#}
-{#                </div>#}
+                {#                <div class="col-lg-12 text-center services-title">#}
+                {##}
+                {#                    <p class="para">#}
+                {#                        Tutaj będzie znajdował się krótki opis poniższych umiejętności, które zdobyłem od początku#}
+                {#                        przygody z programowaniem.#}
+                {#                    </p>#}
+                {#                </div>#}
             </div>
-
-        <div class="my-banner">
-            <div class="page_title2"> UMIEJĘTNOŚCI</div>
-        </div>
+            <div class="my-banner">
+                <div class="page_title2"> UMIEJĘTNOŚCI</div>
+            </div>
             <div class="container services-list">
                 <div class="row">
                     {% if object_list %}
@@ -62,60 +57,43 @@
                             </div>
                         {% endfor %}
                     {% endif %}
-
-
                 </div>
             </div>
         </div>
     </section>
 
-<div class="my-banner">
-    <div class="page_title2"> WYKSZTAŁCENIE</div>
-</div>
+    <div class="my-banner">
+        <div class="page_title2"> WYKSZTAŁCENIE</div>
+    </div>
 
     {% for edu in my_education %}
-
         <section class="education">
             <div class="container">
                 <div class="row">
-
-
-                    <div class=" col-6 col-sm-5 col-md-3" >
+                    <div class=" col-6 col-sm-5 col-md-3">
                         <div class="edu-date"> {{ edu.date_from }} - {{ edu.date_to }}</div>
                     </div>
                     <div class="col-6 col-sm-7 col-md-9">
                         <div class="edu-title">{{ edu.school_name }}</div>
                     </div>
-
                     <div class=" col-sm-5 col-md-3">
                         <div class="edu-image">
                             <img src="{{ edu.school_image.url }}">
                         </div>
                     </div>
-
                     <div class="col-sm-7 col-md-9">
                         <div class="edu-body">
                             {{ edu.body }}
                         </div>
                     </div>
-
-
                     <div class="col-md-12">
                         <div class="edu-cert">
-                            <a href="{{ edu.certificate.url }}" target="_blank"> <img src="{{ edu.certificate.url }}"></a>
+                            <a href="{{ edu.certificate.url }}" target="_blank"> <img
+                                    src="{{ edu.certificate.url }}"></a>
                         </div>
-
                     </div>
-
                 </div>
             </div>
         </section>
-
     {% endfor %}
-
-
-
-
-
-
 {% endblock %}

@@ -6,5 +6,4 @@ app_name = 'hobby'
 
 urlpatterns = [
     path("", HobbyListView.as_view(), name="all_hobbys"),
-
 ]

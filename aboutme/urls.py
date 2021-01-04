@@ -6,5 +6,4 @@ app_name = 'aboutme'
 
 urlpatterns = [
     path("", AboutmeListView.as_view(), name="aboutme"),
-
 ]

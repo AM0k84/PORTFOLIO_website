@@ -1,5 +1,6 @@
 from django.db import models
 
+
 class SocialLinks(models.Model):
     name = models.CharField(max_length=50)
     image = models.ImageField(blank=False, null=False, upload_to='social_image/')

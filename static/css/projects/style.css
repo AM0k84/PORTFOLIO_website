@@ -24,7 +24,6 @@ body {
     line-height: 1.42857143;
     background-color: #fff;
     border-radius: 2px;
-
 }
 
 .img-card {
@@ -119,24 +118,17 @@ body {
 }
 
 .repo-title {
-
-
     text-transform: uppercase;
     margin-top: 30px;
     margin-bottom: 20px;
-
-
     text-align: center;
     font-size: 20px;
-
     background-color: #B3B3B3;
     border: none;
     color: white;
     padding: 15px 32px;
     text-decoration: none;
     display: inline-block;
-
-
 }
 
 .tool-title {
@@ -152,24 +144,14 @@ body {
     display: inline-block;
 }
 
-
-
-
 .all-projects {
     margin-bottom: 50px;
 }
 
 .project-github {
-
     text-align: center;
     margin-bottom: 80px;
-
-
-
-
 }
-
-
 
 .project-banner {
     text-align: center;
@@ -177,21 +159,16 @@ body {
 
 .project-det-title {
     margin-top: 0;
-
     font-size: 20px;
     text-transform: uppercase;
     text-align: center;
-
-
     margin-bottom: 15px;
-
     background-color: #B3B3B3;
     border: none;
     color: white;
     padding: 15px 32px;
     text-decoration: none;
     display: inline-block;
-
 }
 
 .project-det-body {
