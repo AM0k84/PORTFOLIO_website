@@ -41,7 +41,7 @@
                 <hr>
                 <div class="media-s">
                     {% for social in object_list %}
-                        <a href="{{ social.social_link }}">
+                        <a href="{{ social.social_link }}" target="_blank">
                             <img src="{{ social.image.url }}"/> </a>
                     {% endfor %}
                 </div>

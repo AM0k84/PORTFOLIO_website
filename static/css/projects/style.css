@@ -10,7 +10,7 @@ body {
 
 .page_title {
     text-align: center;
-    font-size: 20px;
+    font-size: 40px;
     width: 100%;
     padding: 30px;
     color: #727272E8;
@@ -119,32 +119,79 @@ body {
 }
 
 .repo-title {
-    color: #727272E8;
-    font-size: 17px;
+
+
     text-transform: uppercase;
     margin-top: 30px;
     margin-bottom: 20px;
+
+
+    text-align: center;
+    font-size: 20px;
+
+    background-color: #B3B3B3;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+
+
 }
 
 .tool-title {
     margin-top: 30px;
     margin-bottom: 15px;
+    text-align: center;
+    font-size: 20px;
+    background-color: #B3B3B3;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
 }
 
+
+
+
+.all-projects {
+    margin-bottom: 50px;
+}
 
 .project-github {
-    color: #727272E8;
+
     text-align: center;
     margin-bottom: 80px;
+
+
+
+
 }
 
+
+
+.project-banner {
+    text-align: center;
+}
 
 .project-det-title {
     margin-top: 0;
-    color: #727272E8;
-    font-size: 37px;
+
+    font-size: 20px;
     text-transform: uppercase;
     text-align: center;
+
+
+    margin-bottom: 15px;
+
+    background-color: #B3B3B3;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-decoration: none;
+    display: inline-block;
+
 }
 
 .project-det-body {
@@ -154,6 +201,7 @@ body {
 
 .project-category {
     text-align: center;
+
 }
 
 .project-category a {

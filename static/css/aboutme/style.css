@@ -1,19 +1,28 @@
 
 .page_title {
     text-align: center;
-    font-size: 20px;
+    font-size: 40px;
     width: 100%;
     padding: 30px;
     color: #727272E8;
 }
 
+.my-banner {
+    text-align: center
+}
+
+
 .page_title2 {
     text-align: center;
     font-size: 20px;
-    width: 100%;
-    padding: 30px;
-    color: #727272E8;
     margin-top: 30px;
+    background-color: #B3B3B3;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+
+    text-decoration: none;
+    display: inline-block;
 }
 
 .card {
@@ -34,13 +43,13 @@
     color: #727272E8;
     margin: 0 auto;
     float: none;
-    margin-bottom: 60px;
+    /*margin-bottom: 60px;*/
 }
 
 .services-img img {
     max-width: 50px;
     max-height: 50px;
-    opacity: 0.5;
+    /*opacity: 0.5;*/
 }
 
 .services-area .services-title h1 {
@@ -57,10 +66,14 @@
     color: #727272E8;
 }
 
+.services-list {
+    margin-bottom: 10px;
+}
 
 .edu-title {
     color: #727272E8;
     font-size: 20px;
+    margin-top: 25px;
 }
 
 .edu-body {
@@ -72,6 +85,7 @@
     color: #727272E8;
     font-size: 20px;
     text-align: center;
+    margin-top: 20px;
 }
 
 .edu-image {
@@ -88,6 +102,14 @@
     text-align: center;
     margin-bottom: 30px;
     margin-top: 15px;
+}
+
+.edu-cert img {
+    opacity: 0.7;
+}
+
+.edu-cert img:hover {
+    opacity: 1;
 }
 
 
