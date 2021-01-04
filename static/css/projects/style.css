@@ -50,13 +50,13 @@ body {
     width: 10%;
     height: 10%;
     display: inline-block;
-    opacity: 0.5;
+    opacity: 0.7;
     margin-left: 5px;
 }
 
 
 .card-category img:hover {
-    opacity: 0.9;
+    opacity: 1;
 }
 
 .card-category a {
@@ -191,11 +191,11 @@ body {
     display: inline-block;
     width: 40px;
     height: 40px;
-    opacity: 0.5;
+    opacity: 0.7;
 }
 
 .project-category img:hover {
-    opacity: 0.9;
+    opacity: 1;
 }
 
 .git-link a {

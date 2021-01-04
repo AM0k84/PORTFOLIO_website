@@ -9,4 +9,4 @@ class HobbyListView(ListView):
     model = MyHobby
 
     def get_queryset(self):
-        return self.model.objects.all().order_by('-pk')
+        return self.model.objects.all().order_by('pk')
