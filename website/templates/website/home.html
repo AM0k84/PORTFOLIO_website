@@ -18,10 +18,15 @@
 
                         <div class="site-button">
                             <div class="d-flex flex-row flex-wrap">
-                                <button type="button" class="btn btn-outline-secondary mr-4 text-uppercase">Zatrudnij mnie
-                                </button>
-                                <button type="button" class="btn btn-outline-secondary mr-4 text-uppercase"><i class="far fa-arrow-alt-circle-down"></i> Pobierz CV
-                                </button>
+                                <a href="{% url 'contact:contact' %}"><button type="button" class="btn btn-outline-secondary mr-4 text-uppercase">Zatrudnij mnie
+                                </button></a>
+
+
+                                <a href="{% static 'files/cv.pdf' %}" download="CV"><button type="button" class="btn btn-outline-secondary mr-4 text-uppercase"><i class="far fa-arrow-alt-circle-down"></i> Pobierz CV
+                                </button></a>
+
+
+
                             </div>
 
                         </div>

@@ -10,7 +10,7 @@ class SocialLinksListView(ListView):
     model = SocialLinks
 
     def get_queryset(self):
-        return self.model.objects.all().order_by('-pk')
+        return self.model.objects.all().order_by('pk')
 
 
 # def contactme(request):
