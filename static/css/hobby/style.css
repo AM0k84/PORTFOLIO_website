@@ -44,13 +44,20 @@
     color: #727272E8;
 }
 
+
+.spotify {
+    text-align: center;
+}
+
 #spotify {
     margin-top: 15px;
     margin-bottom: 30px;
+
 }
 
 .item img {
     margin-bottom: 30px;
+
 }
 
 

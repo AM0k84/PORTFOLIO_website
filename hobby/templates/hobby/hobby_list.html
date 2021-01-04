@@ -40,10 +40,11 @@
                     </div>
                 {% endif %}
 
-
-                {% if hobby.iframe %}
-                    <iframe id="spotify" src="{{ hobby.iframe|safe }}"></iframe>
-                {% endif %}
+                <div class="col-12 spotify">
+                    {% if hobby.iframe %}
+                        <iframe id="spotify" src="{{ hobby.iframe|safe }}"></iframe>
+                    {% endif %}
+                </div>
 
                 <div class="col-12 col-lg-12 col-md-12">
                     <div class="video-content">
