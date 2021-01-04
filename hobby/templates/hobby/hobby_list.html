@@ -1,7 +1,9 @@
 {% extends "website/base.html" %}
 {% load static %}
+
 {% block css %}
     <link rel="stylesheet" href="{% static 'css/hobby/style.css' %}"> {% endblock %}
+{% load embed_video_tags %}
 {% block title %}HOBBY{% endblock %}
 
 
@@ -9,6 +11,72 @@
 
     <div class="page_title"> HOBBY</div>
 
+    <div class="container">
+        <div class="row">
+            {% for hobby in object_list %}
+
+                <div class="col-12 col-lg-12 col-md-12">
+                    <div class="hobby-name">
+                        {{ hobby.name|upper }}
+                    </div>
+                </div>
+
+  <div class="col-12 col-lg-7 col-md-8 ">
+                    <div class="hobby-body">
+                        {{ hobby.body|safe }}
+                    </div>
+                </div>
+
+                {% if hobby.galery %}
+                <div class="col-12 col-lg-5 col-md-4">
+                    <div class="content-gallery">
+
+                        <div class="row photos">
+
+                            <div class="col-12 col-md-12 col-lg-12 item">
+                                <a href="{{ hobby.galery.image1.url }}" target="_blank"><img src="{{ hobby.galery.image1.url }}"></a>
+                            </div>
+
+{#                            <div class="col-12 col-md-12 col-lg-6 item">#}
+{#                                <a href="{{ hobby.galery.image2.url }}" target="_blank"><img src="{{ hobby.galery.image1.url }}"></a>#}
+{#                            </div>#}
 
 
+
+
+                        </div>
+
+                    </div>
+                </div>
+{% endif %}
+
+
+
+<div class="col-6 col-md-6 col-lg-6 item">
+                {% if hobby.iframe %}
+                    <iframe id="spotify" src="{{ hobby.iframe|safe }}"></iframe>
+                {% endif %}
+                </div>
+
+
+                <div class="col-12 col-lg-12 col-md-12">
+                    <div class="video-content">
+                        {% video hobby.youtube_video1 '350x270' %}
+                        {% video hobby.youtube_video2 '350x270' %}
+                        {% video hobby.youtube_video3 '350x270' %}
+                        {#                    {{ hobby.youtube_video1.url }}#}
+                        {#                    {{ hobby.youtube_video2.url }}#}
+                        {#                    {{ hobby.youtube_video.thumbnail }}#}
+                        {#                    {{ hobby.youtube_video.backend }}#}
+
+                    </div>
+                </div>
+
+
+
+            {% endfor %}
+
+
+        </div>
+    </div>
 {% endblock %}

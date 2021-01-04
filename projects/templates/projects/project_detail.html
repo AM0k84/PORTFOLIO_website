@@ -13,8 +13,10 @@
     <div class="container">
         <div class="row">
             <div class="col-md-7">
-                <div class="project-det-title">
-                    {{ project.title }}
+                <div class="project-banner">
+                    <div class="project-det-title">
+                        {{ project.title }}
+                    </div>
                 </div>
                 <div class="project-det-body">
                     {{ project.body|safe }}
@@ -51,10 +53,13 @@
                     {% endfor %}
                 </div>
             </div>
+
+
             <div class="project-github col-md-6">
                 <div class="repo-title">
                     <i class="fab fa-github"></i> github
                 </div>
+
                 <div class="git-link">
 
                     <a href="{{ project.github_repository }}" target="_blank"> {{ project.github_repository }}</a>
@@ -62,15 +67,10 @@
             </div>
 
 
-
-
-
-            </div>
-
-
-
-
         </div>
+
+
+    </div>
 
 
     </div>
