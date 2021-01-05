@@ -11,19 +11,29 @@
     <div class="page_title"> KONTAKT</div>
 
     <div class="container">
-        <p class="para">
-            Zapraszam do kontaktu! <br> Bardzo chętnie odpowiem na wszystkie pytania.
-        </p>
+        <div class="after-message">
+            {% if message_name %}
+                <center>
+                    <h2>Dziękuję za wiadomość {{ message_name }}</h2>
+                    <p>Odpowiem najszybciej jak to możliwe!</p>
+                </center>
+        </div>
+            {% else %}
+                <p class="para">
+                    Pozostańmy w kontakcie! <br> Chętnie odpowiem na wszystkie pytania
+                </p>
+            {% endif %}
         <br><br>
         <div class="row">
             <div class="col-md-6">
-                <form method="POST" class="formularz">
+                <form method="POST" action="{% url 'contact:contact' %}" class="formularz">
                     {% csrf_token %}
-                    <input type="Text" name="text" required="" placeholder="Twoje imię" class="form-control">
+                    <input type="text" name="message-name" required="" placeholder="Twoje imię" class="form-control">
                     <br>
-                    <input type="Email" name="Email" required="" placeholder="Twój Email" class="form-control">
+                    <input type="email" name="message-email" required="" placeholder="Twój Email" class="form-control">
                     <br>
-                    <textarea rows="6" placeholder="Treść wiadomości" required="" class="form-control"></textarea>
+                    <textarea name="message" rows="6" placeholder="Treść wiadomości" required=""
+                              class="form-control"></textarea>
                     <br>
                     <center>
                         <button class="btn btn-outline-secondary">Wyślij wiadomość</button>
@@ -41,10 +51,13 @@
                 </div>
                 <hr>
                 <div class="media-s">
-                    {% for social in object_list %}
-                        <a href="{{ social.social_link }}" target="_blank">
-                            <img src="{{ social.image.url }}"/> </a>
+
+                    {% for icon in icons %}
+                        <a href="{{ icon.social_link }}" target="_blank">
+                            <img src="{{ icon.image.url }}"/> </a>
+
                     {% endfor %}
+
                 </div>
                 <br>
             </div>
