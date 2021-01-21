@@ -127,9 +127,8 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 MEDIA_URL = '/mediafiles/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'mediafiles')
 
-EMAIL_HOST = 'smtp.gmail.com'
-EMAIL_PORT = '587'
-EMAIL_HOST_USER = 'lukaszchalinskiwebsite@gmail.com'
-EMAIL_HOST_PASSWORD = 'kulyiveljwhdsvcy'
-EMAIL_USE_TLS = True
+EMAIL_HOST = config("EMAIL_HOST")
+EMAIL_HOST_USER = config("EMAIL_USER")
+EMAIL_HOST_PASSWORD = config("EMAIL_PASWORD")
+EMAIL_USE_TLS = config("EMAIL_DEBUG")
 # EMAIL_USE_SSL = False
